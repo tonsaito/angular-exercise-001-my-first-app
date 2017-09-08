@@ -1,0 +1,21 @@
+<h3>Directives Assignment #3</h3>
+
+<ol>
+  <li>Add A button which says 'Display details'</li>
+  <li>Add a paragraph with any content of your choice eg. Secret Password = tuna</li>
+  <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+  <li>Log all button clicks in an array and output that array below the secret paragraph - log a timestamp or number</li>
+  <li>Starting at the 5th log item, give all future log items a blue background via ngStyle and whiteColor via ngClass</li>
+</ol>
+<br>
+<h4>My Solution</h4>
+
+<button class="btn btn-primary" (click)="displayDetails()">Display details</button>
+<div class="my-secret-text">
+  <h5 *ngIf="isDisplay">My secret is: I have no secrets</h5>
+</div>
+
+<h4>Logs:</h4>
+<div class="log-row" *ngFor="let logItem of logs let i=index" 
+  [ngStyle]="{backgroundColor: i >5 ? '#336699' : '#f1f1f1' }" 
+  [ngClass]="{white: i > 5}">{{logItem}}</div>

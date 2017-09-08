@@ -9,12 +9,13 @@ import { AlertsComponent } from './alerts/alerts.component'
 import { AlertWarningComponent } from './alert-warning/alert-warning.component';
 import { AlertAlarmComponent } from './alert-alarm/alert-alarm.component';
 import { AlertSuccessComponent } from './alert-success/alert-success.component';
-import { DataBindingComponent } from './data-binding/data-binding.component'; 
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DirectivesComponent } from './directives/directives.component'; 
 
 @NgModule({
   declarations: [
     AppComponent, 
-    ServerComponent, ServersComponent, AlertsComponent, AlertWarningComponent, AlertAlarmComponent, AlertSuccessComponent, DataBindingComponent
+    ServerComponent, ServersComponent, AlertsComponent, AlertWarningComponent, AlertAlarmComponent, AlertSuccessComponent, DataBindingComponent, DirectivesComponent
   ],
   imports: [
     BrowserModule,

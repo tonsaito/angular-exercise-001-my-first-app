@@ -1,0 +1,18 @@
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.my-secret-text{
+    border: 2px solid #dddddd;
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+.log-row{
+    padding: 2px 5px;
+    margin: 1px 0px;
+}
+.white{
+    color: #ffffff;
+}
